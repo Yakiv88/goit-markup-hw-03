@@ -39,13 +39,25 @@ p {
 /* header */
 
 .container {
-  width: 1200px;
-  display:flex;
-  justify-items: space-between;
+
+ 
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  background-color: aqua; 
+}
+
+.container {
+  display:flex;
+  justify-items: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: aqua;
 }
 
 .site-nav-a {
@@ -67,41 +79,42 @@ p {
   display:flex;
  align-items: center;
  
+}  ccccccccc   
+.head-u {
+  margin-top:0 ;
+  margin-bottom: 0;
+  padding-left: 0;
+
 }
 
 
 
-.site-nav .item +.item {
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+margin-right: 0;
+}
+
+.site-nav .link {
+display: block;
+padding-top: 21px;
+padding-bottom: 21px;
+}
+
+
+
+
+.auth-nav .item +.item {
   margin-left: 50px;
 }
-
-.item-c {
-  margin-left: 0px;
-  margin-right: 93px;
-}
-
-.mar {
-  margin-left: 0;
-}
-
-.item-a {
-  margin-left: 290px;
-  margin-right: 0px;
-}
-
-.item-b {
-  margin-left: 50px;
-  margin-right: 0px;
-}
-
-
 
 
 
 .header {
   background-color:var(--header-color);
   font-weight: 500;
-  border-bottom:1px solid #ECECEC;
 }
 
 .link {
@@ -132,46 +145,22 @@ p {
 }
 
 
-/* Cекция герой */
-
-
-
-
-.hero-container {
-  display: block;
-  align-items: center;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 200px;
-  margin-right: auto;
-  margin-left: auto;
-
+.hero {
+  background-color:var(--hero-footer);
 }
 
-.hero-name {
-  visibility:hidden;
-  margin-bottom: 0px;
-  padding-top: 15px;}
-
-
- .efect-hero-container  {
-  display: block;
-  min-width: 700px;
-  height: 120px;
-
-  margin-top:150px; 
-  margin-bottom:30px ;
-  padding-right: 250px;
-  padding-left: 250px;
+.pege-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  align:center;
+  letter-spacing: 0.06em;
+  color:var(--header-color);
 }
-
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
-  margin-top: 0px;
-  margin-bottom: 0px;
   line-height: 1.36;
   text-transform: uppercase;
   text-align: center;
@@ -179,89 +168,16 @@ p {
   color:var(--header-color);
 }
 
+.hero-name {
+  visibility:hidden;
+}
 
 .button-hero {
-  display: block;
-   height: 50px;
-  border-radius: 4px;
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   background-color:var(--blue-color);
   color:var(--header-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: none;
-
 }
-
-.button-hero:hover,
-.button-hero:focus {
-text-decoration: underline;
-text-decoration-color:#2196F3;
-background-color: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-
-.hero {
-  background-color:var(--hero-footer);
-}
-
-
-
-
-
-/* секция ОСОБЕННОСТИ */
-
-
-
-.spacial-container {
-  display: flex;
-  flex-direction:column;
-  width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom:50px;
-  padding-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.os-title {
-  display: flex;
-}
-.spacial-container-li {
-  padding-left: 0px;
-     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-
-  .spacial-container-li .li {
-  padding-bottom: 30px;
-  margin-right: 30px;
- 
-}
-
-.osob-h, .osob-p {
-  display: flex;
-
-}
-.osob-p {
-    margin-right: 30px;
-    margin-bottom: 0px;
-}
-.p-end {
-  margin-right: 0px;
-}
-
-.os-item {
- display: flex;
- flex-direction:column;
-  }
 
 
 .li-nd li, .auth-nav li,
@@ -394,13 +310,3 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color:var(--brand-letter);
 
 }
-
- 
-.pege-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  align:center;
-  letter-spacing: 0.06em;
-  color:var(--header-color);
-}  
