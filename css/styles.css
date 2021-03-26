@@ -44,6 +44,8 @@ p {
   justify-items: space-between;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-right: auto;
   margin-left: auto;
  
@@ -620,6 +622,10 @@ color:var(--header-color);
 
 /* Секция карточки */
 
+
+
+
+
 .container-card {
    width: 1200px;
   display: block;
@@ -654,7 +660,7 @@ color:var(--header-color);
 
 
 .foto-item-cart {
-  display: flex;
+  display: block;
   max-width: 100%;
 height: auto;  
  margin: 0px;
